@@ -1,0 +1,25 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yabdabs/Friend-Finder.git"
+  },
+  "author": "yaba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yabdabs/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/yabdabs/Friend-Finder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7"
+  }
+}

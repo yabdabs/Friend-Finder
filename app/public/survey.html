@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- <link rel="stylesheet" type="text/css" href="../images/style.css"> -->
+	<style type="text/css">
+		img{
+			width:800px;
+			height: 600px;
+		}
+	</style>
+
+</head>
+<body>
+
+<div class= "container">
+	
+	<h1>Survey Questions</h1>
+	<hr>
+
+	<form role="form" id="myForm">
+		<h2>About You</h2>
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input type="text" class="form-control" id="name" placeholder="Full Name" required>
+		</div>
+
+		<div class="form-group">
+			<label for="imageLink">Link to Photo Image</label>
+			<input type="text" class="form-control" id="imageLink" required>
+		</div>
+
+		<div class="form-group">
+			<h3> Question 1</h3>
+			<label for="question1">Your mind is always buzzing with unexplored ideas and plans.</label>
+			<select  class="form-control" name="question1" id="question1">
+				<!-- <option></option> -->
+				<option>1 (Strongly Disagree)</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5 (Strongly Agree)</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<h3> Question 2</h3>
+			<label for="question2">Generally speaking, you rely more on your experience than your imagination.</label>
+			<select  class="form-control" name="question2" id="question2">
+				<!-- <option></option> -->
+				<option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<h3> Question 3</h3>
+			<label for="question3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+			<select  class="form-control" name="question3" id="question3">
+				<!-- <option></option> -->
+				<option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<h3> Question 4</h3>
+			<label for="question4">You rarely do something just out of sheer curiosity.</label>
+			<select  class="form-control" name="question4" id="question4">
+				<!-- <option></option> -->
+				<option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<h3> Question 5</h3>
+			<label for="question1">People can rarely upset you.</label>
+			<select  class="form-control" name="question5" id="question5">
+				<option></option>
+				<option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<h3> Question 6</h3>
+			<label for="question1">It is often difficult for you to relate to other people’s feelings.</label>
+			<select  class="form-control" name="question6" id="question6">
+				<!-- <option></option> -->
+				<option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>>
+			</select>
+		</div>
+
+		
+		<div class="form-group">
+			<h3> Question 7</h3>
+			<label for="question7">In a discussion, truth should be more important than people’s sensitivities.</label>
+			<select  class="form-control" name="question7" id="question7">
+				<!-- <option></option> -->
+				<option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<h3> Question 8</h3>
+			<label for="question8">You rarely get carried away by fantasies and ideas.</label>
+			<select  class="form-control" name="question8" id="question8">
+				<!-- <option></option> -->
+				<option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<h3> Question 9</h3>
+			<label for="question9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+			<select  class="form-control" name="question9" id="question9">
+				<!-- <option></option> -->
+				<option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<h3> Question 10</h3>
+			<label for="question10">You feel more energetic after spending time with a group of people.</label>
+			<select  class="form-control" name="question10" id="question10">
+				<option></option>
+				<option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+
+		<button type="submit" class=" submit btn btn-warning btn-lg btn-block">Submit</button>
+	
+	</form>
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Your Match</h4>
+      </div>
+      <div class="modal-body">
+      	<div class= "matchName"></div> 
+      	<div class="matchImg"></div>	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<hr>
+<footer class="footer">
+      <div class="container">
+        <p class="text-muted">
+        	<a href="/api/friends">API Friends List</a> 
+        </p>
+      </div>
+</footer>
+	
+</body>
+</html>
+
+
+<script type="text/javascript">
+	
+
+$("#myForm").submit(function(event){
+	event.preventDefault();
+	var scores=[];
+
+	var q1= $("#question1").val();
+	var q2= $("#question2").val();
+	var q3= $("#question3").val();
+	var q4= $("#question4").val();
+	var q5= $("#question5").val();
+	var q6= $("#question6").val();
+	var q7= $("#question7").val();
+	var q8= $("#question8").val();
+	var q9= $("#question9").val();
+	var q10= $("#question10").val();
+
+
+	scores.push(q1, q2, q3, q4, q5, q6, q7, q8, q9, q10);
+	console.log(scores);
+
+
+
+
+	// if(validateForm()==true){
+		//Methodology
+		// q1=q1.substring(0,1); 
+		for(var i=0; i<scores.length; i++){
+			scores[i] = scores[i].substring(0,1);
+		}
+
+		var newFriend= {
+			name: $("#name").val(),
+			photo: $("#imageLink").val(),
+			scores: scores
+		}
+
+		// console.log(q1);
+		console.log(scores);
+		console.log(newFriend);
+
+		//what is this used for?
+		// var currentURL= window.location.origin;
+
+		$.ajax({
+			url:"/api/friends",
+			method: "POST",
+			//data to be sent to the server
+			data: newFriend,
+		}).done(function(data){
+
+			console.log("success");
+			console.log(data);
+
+			$(".matchName").append(data.name);
+
+			$("#myModal").modal('show');
+			var matchImg= $("<img>").attr("src", data.photo);
+			$(".matchImg").append(matchImg);
+
+		});
+});
+	
+	
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<!-- USE OPTION VALUE=NUM TO BE ABLE TO ACCESS THE NUMBER -->
+
+<!-- Why do we include javascript in this file? as opposed to creating another js file -->
+
+<!-- what is this used for?
+var currentURL= window.location.origin; -->
+
+<!-- why do we use the path like this and not append it with currentURL?
+url:"/api/friends", -->
+
+<!-- what does res.json(true or false) do? apiRoutes for hR -->
