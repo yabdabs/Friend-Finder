@@ -15,6 +15,10 @@
 			width:800px;
 			height: 600px;
 		}
+
+		.matchName{
+			font-size: 30px;
+		}
 	</style>
 
 </head>
@@ -93,7 +97,7 @@
 			<h3> Question 5</h3>
 			<label for="question1">People can rarely upset you.</label>
 			<select  class="form-control" name="question5" id="question5">
-				<option></option>
+				<!-- <option></option> -->
 				<option value="1">1 (Strongly Disagree)</option>
 			  <option value="2">2</option>
 			  <option value="3">3</option>
@@ -159,7 +163,7 @@
 			<h3> Question 10</h3>
 			<label for="question10">You feel more energetic after spending time with a group of people.</label>
 			<select  class="form-control" name="question10" id="question10">
-				<option></option>
+				<!-- <option></option> -->
 				<option value="1">1 (Strongly Disagree)</option>
 			  <option value="2">2</option>
 			  <option value="3">3</option>
@@ -172,24 +176,28 @@
 	
 	</form>
 
-<!-- Modal -->
-<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Your Match</h4>
-      </div>
-      <div class="modal-body">
-      	<div class= "matchName"></div> 
-      	<div class="matchImg"></div>	
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+	<!-- Modal -->
+	<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h1 class="modal-title" id="myModalLabel">Your Match</h1>
+	      </div>
+
+	      <div class="modal-body">
+	      	<div class= "matchName"></div> 
+	      	<div class="matchImg"></div>	
+	      </div>
+
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+	      </div>
+
+	    </div>
+	  </div>
+	</div>
 
 <br>
 <hr>
@@ -228,8 +236,6 @@ $("#myForm").submit(function(event){
 	console.log(scores);
 
 
-
-
 	// if(validateForm()==true){
 		//Methodology
 		// q1=q1.substring(0,1); 
@@ -260,12 +266,15 @@ $("#myForm").submit(function(event){
 			console.log("success");
 			console.log(data);
 
-			$(".matchName").append(data.name);
+			$(".matchName").html(data.name);
 
 			$("#myModal").modal('show');
 			var matchImg= $("<img>").attr("src", data.photo);
-			$(".matchImg").append(matchImg);
+			$(".matchImg").html(matchImg);
 
+			$(".close").click(function(){
+				$("#myForm")[0].reset();
+			})
 		});
 });
 	

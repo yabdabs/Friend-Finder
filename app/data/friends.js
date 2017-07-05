@@ -1,7 +1,7 @@
 var friends= [
 	{
 		name: "Ahmed",
-		photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+		photo: "http://www.purethoughts.net/wp-content/uploads/2015/11/Happy-Boy.jpg",
 		scores: [
 			5,
 			1,
@@ -17,7 +17,7 @@ var friends= [
 	},
 	{
 		name: "Yo momma",
-		photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+		photo: "http://imgur.com/4EBJwpA",
 		scores: [
 			2,
 			5,
@@ -32,21 +32,39 @@ var friends= [
 		]
 	},
 	{
-		name: "Slut",
-		photo: "https://cdn.pornpics.com/pics1/2017-01-19/395781_20big.jpg",
+		name: "Lebron James",
+		photo: "https://espntheundefeated.files.wordpress.com/2017/05/gettyimages-684321920.jpg?w=1024",
 		scores: [
 			1,
 			1,
+			3,
 			1,
 			1,
-			1,
-			1,
-			1,
+			3,
+			5,
 			1,
 			1,
 			5	
 		]
-	}
+	},
+	{
+		name: "Donald Trump",
+		photo: "http://images.dailykos.com/images/299332/story_image/donald-trump-624x415.jpg?1473822150",
+		scores: [
+			5,
+			4,
+			3,
+			4,
+			1,
+			3,
+			5,
+			3,
+			1,
+			5	
+		]
+	},
+
+
 ];
 
 module.exports= friends;
